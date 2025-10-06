@@ -364,8 +364,8 @@ const departments = [
 ];
 
 // Generate 24-hour time slots with 1-hour intervals
-const generateTimeSlots = () => {
-  const slots = [];
+const generateTimeSlots = (): string[] => {
+  const slots: string[] = [];
   for (let hour = 0; hour < 24; hour++) {
     const timeString = hour === 0 ? '12:00 AM' : 
                       hour < 12 ? `${hour}:00 AM` : 
